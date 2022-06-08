@@ -19,6 +19,7 @@ pipeline {
     stage("deploy") {
        steps {
           echo 'deploying the app'
+          echo 'automatically trigger execution'
           sh 'mvn spring-boot:run'
        }
     }
