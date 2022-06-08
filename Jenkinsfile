@@ -7,6 +7,7 @@ pipeline {
     stage("build") {
         steps {
             echo 'building the app'
+            sh 'mvn clean install'
         }
     }
 
@@ -19,6 +20,7 @@ pipeline {
     stage("deploy") {
        steps {
           echo 'deploying the app'
+          sh 'mvn spring-boot:run'
        }
     }
 
