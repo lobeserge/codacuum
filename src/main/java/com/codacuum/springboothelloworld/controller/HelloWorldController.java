@@ -10,4 +10,9 @@ public class HelloWorldController {
     public String HelloWorld(){
         return "Hello World";
     }
+
+    @GetMapping("/welcmom")
+    public String sayWelcome(){
+        return "Welcome to Jenkins spring boot app - We are the best";
+    }
 }
