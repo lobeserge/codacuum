@@ -11,7 +11,7 @@ public class HelloWorldController {
         return "Hello World";
     }
 
-    @GetMapping("/welcmom")
+    @GetMapping("/welcome")
     public String sayWelcome(){
         return "Welcome to Jenkins spring boot app - We are the best";
     }
